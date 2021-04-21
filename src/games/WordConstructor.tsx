@@ -78,7 +78,6 @@ const WordConstructor = () => {
   const startGame = () => {
     setIsGame(true);
   };
-  console.log(stats);
   useEffect(() => console.log('render'));
   return (
     <FullScreen handle={handle}>
