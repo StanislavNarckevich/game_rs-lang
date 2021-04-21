@@ -77,18 +77,6 @@ const WordConstructor = () => {
 
   const startGame = () => {
     setIsGame(true);
-    // const data = getWords(1).then((response) => {
-    //   const arr: any = response.map(
-    //     (item: { word: string; wordTranslate: string }) => {
-    //       return {
-    //         word: item.word,
-    //         translateWord: item.wordTranslate,
-    //       };
-    //     }
-    //   );
-    //   setWords(arr);
-    // });
-    //
   };
   console.log(stats);
   useEffect(() => console.log('render'));
@@ -107,9 +95,7 @@ const WordConstructor = () => {
               handleCorrectAnswer={handleCorrectAnswer}
               handleInCorrectAnswer={handleInCorrectAnswer}
             />
-          ) : (
-            <button onClick={startGame}>Start Game</button>
-          )}
+          ) : null}
         </div>
       </div>
     </FullScreen>
