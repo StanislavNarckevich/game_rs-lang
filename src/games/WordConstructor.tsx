@@ -84,10 +84,6 @@ const WordConstructor = () => {
     <FullScreen handle={handle}>
       <div className="game">
         <div className="container">
-          <button onClick={() => SetIsFullscreen(!isFullscreen)}>
-            {isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
-          </button>
-
           {isGame ? (
             <Game
               data={wordsData}
